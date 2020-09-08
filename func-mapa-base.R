@@ -12,7 +12,6 @@ mapa.base <- function(left.lon, right.lon, bottom.lat, top.lat) {
    newmap <- getMap(resolution = "high")
 
    # En caso de tener que cambiar proyección a shp externo...
-   # prueba de cambio
    proy <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 
    plot(newmap, col = "lightgrey", border = "darkgray",
