@@ -7,3 +7,4 @@ Como variables de entrada a la misma hay que indicar los siguientes parámetros:
 * right.lon: la posición derecha/este de la longitud hasta donde visualizar el mapa base
 * bottom.lat: la posición inferior/sur de la latitud hasta donde visualizar el mapa base
 * top.lat: la posición superior/norte de la latitud hasta donde visualizar el mapa base
+* color.mapa: indica el color del fondo del mapa
