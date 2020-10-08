@@ -1,4 +1,4 @@
-mapa.base <- function(left.lon, right.lon, bottom.lat, top.lat) {
+mapa.base <- function(left.lon, right.lon, bottom.lat, top.lat, color.mapa) {
    # --------------------------------------------------------------------------
    # Funcion que grafica mapa global y se define la región donde hacer zoom
    # --------------------------------------------------------------------------
@@ -14,7 +14,7 @@ mapa.base <- function(left.lon, right.lon, bottom.lat, top.lat) {
    # En caso de tener que cambiar proyección a shp externo...
    proy <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 
-   plot(newmap, col = "lightgrey", border = "darkgray",
+   plot(newmap, col = color.mapa, border = "darkgray",
         xlim = c(left.lon, right.lon), ylim = c(bottom.lat, top.lat),
         bg = "aliceblue",
         asp = 1)
